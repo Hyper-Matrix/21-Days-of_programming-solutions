@@ -1,5 +1,23 @@
-import java.lang.Math.pow
+
 import java.util.*
+fun prime(a:Int,b:Int){
+    var m = a
+    while(m<b){
+        var flag=false
+        for(i in 2 .. a/2){
+            if(m%i==0){
+                flag=true
+                break
+            }
+
+        }
+        if(flag==false) {
+            print("${m}\n")}
+
+         m++
+
+    }
+}
 
 fun main(args:Array<String>){
 
@@ -8,20 +26,7 @@ var sc = Scanner(System.`in`)
     var a = sc.nextInt()
     print("No last number")
     var b = sc.nextInt()
-    while(a<b){
-        var flag=false
-        for(i in 2 .. a/2){
-            if(a%i==0){
-                flag=true
-                break
-            }
-
-        }
-        if(flag==false) {
-            print("${a}\n")}
-
-        a++
-    }
-
+    prime(a,b)
 
 }
+
