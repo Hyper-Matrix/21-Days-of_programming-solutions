@@ -33,6 +33,7 @@ var m=0
             list[m].toInt() == 8 -> count8 +=1
             list[m].toInt() == 9 -> count9 +=1
         }
+        m++
     }
 
 print("Frequency of zero : ${count0}")
